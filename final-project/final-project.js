@@ -76,36 +76,38 @@ function createNubs (point) {
   return c1;
 }
 
-/* This function creates a 1 grade Bezier curve. The function takes as input an array of curves. It returns to the Bezier curve. 
+/* This function creates a Bezier curve surface. The function takes as input an array of curves. It returns to the Bezier curve surface. 
 
-   INPUT - An array of curves
+   INPUT - An array curves
 
-   OUTPUT - A 1 grade Bezier curve
+   OUTPUT - A Bezier curve surface
 
 */
+
 function createBezierS1(curves) {
   var b1 = BEZIER(S1)(curves);
-  var b1Map = MAP(b1)(domain2);
-  //DRAW(b1Map);
-   return b1;
+  //var b1Map = MAP(b1)(domain2);
+  //DRAW(b1Map)
+  return b1;
 }
-/* This function creates a 2 grade Bezier curve. The function takes as input an array of curves and a color. It returns to the drawing of curves. 
+
+/* This function draws a Bezier curve surface. The function takes as input an array of curves and a color. It returns to the drawing of curves surfaces. 
 
    INPUT - An array of curves and a color
 
-   OUTPUT - A 2 grade Bezier curve
+ */
 
-*/
 function createBezierS2 (curves, color) {
   var b1 = BEZIER(S2)(curves);
   var b1Map = MAP(b1)(domain3);
   return DRAW(COLOR(color)(b1Map));
 }
-/* This function creates a 1 grade Bezier curve. It takes in input an initial point, a final point and an array of points. It returns the 1 grade Bezier curve. 
- 
-   INPUT - An initial point, a final point and an array of points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+/* This function creates a Bezier curve surface. It takes in input an initial point, a final point and an array of array of points. It returns the Bezier curve surface. 
+ 
+   INPUT - An initial point, a final point and an array of array of points.
+
+   OUTPUT - A Bezier curve surface. 
 
 */
 function createCurveSurface(pointStart, pointFinal, points) {
@@ -140,11 +142,11 @@ function reverseR(array) {
   return arrayReturn;
 }
 
-/* This function creates a cylindrical surface. It takes as input two arrays one for the upper base one for the lower base of cylender  
+/* This function creates a cylindrical surface. It takes as input two arrays of array of points one for the upper base one for the lower base of cylender  
  
-   INPUT - Two arrays of control points.
+   INPUT - Two arrays of arrays of control points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - A bezier surface. 
 
 */
 function generateMicrotubule (pointSup,pointInf) {
@@ -207,11 +209,11 @@ function controlsPointTransformation(controls) {
 }
 
 
-/* This function creates a 1 grade Bezier curve. It takes in input a final point and an array of points. It returns the 1 grade Bezier curve. 
+/* This function creates a Bezier curve surface. It takes in input a point and an array of array of points. It returns a Bezier curve surface. 
  
-   INPUT - A final point and an array of points.
+   INPUT - A final point and an array of array of points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - A Bezier curve surface. 
 
 */
   function createCurveSurface2(pointFinal, points) {

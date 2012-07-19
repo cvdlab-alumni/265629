@@ -55,11 +55,11 @@ function createNubs (point) {
   //DRAW(curve1);
   return c1;
 }
-/* This function creates a 1 grade Bezier curve. The function takes as input an array of curves. It returns to the Bezier curve. 
+/* This function creates a Bezier curve surface. The function takes as input an array of curves. It returns to the Bezier curve surface. 
 
-   INPUT - An array of curves
+   INPUT - An array curves
 
-   OUTPUT - A 1 grade Bezier curve
+   OUTPUT - A Bezier curve surface
 
 */
 function createBezierS1(curves) {
@@ -68,11 +68,11 @@ function createBezierS1(curves) {
   //DRAW(b1Map);
    return b1;
 }
-/* This function creates a 1 grade Bezier curve. It takes in input an initial point, a final point and an array of points. It returns the 1 grade Bezier curve. 
+/* This function creates a Bezier curve surface. It takes in input an initial point, a final point and an array of array of points. It returns the Bezier curve surface. 
  
-   INPUT - An initial point, a final point and an array of points.
+   INPUT - An initial point, a final point and an array of array of points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - A Bezier curve surface. 
 
 */
 function createCurveSurface(pointStart, pointFinal,points) {

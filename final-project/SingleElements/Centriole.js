@@ -51,11 +51,11 @@ function createNubs (point) {
   //DRAW(curve0)
   return c0;
 };
-/* This function creates a cylindrical surface. It takes as input two arrays one for the upper base one for the lower base of cylender  
+/* This function creates a cylindrical surface. It takes as input two arrays of array of points one for the upper base one for the lower base of cylender  
  
-   INPUT - Two arrays of control points.
+   INPUT - Two arrays of arrays of control points.
 
-   OUTPUT - A 1 grade Bezier curve. 
+   OUTPUT - A bezier surface. 
 
 */
 function generateMicrotubule (pointSup,pointInf) {
